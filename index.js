@@ -35,7 +35,7 @@ while (services){
             finalList += "Polygel\n"
         break;
         case 5: 
-            console.log(`Los servicios que elegiste ${user}, son:\n${finalList} Total de los servicios: $${total}`)
+            console.log(`Los servicios que elegiste ${user.toUpperCase()}, son:\n${finalList}Total de los servicios: $${total}`)
             alert(`Los servicios que elegiste ${user}, son\n${finalList}Total de los servicios: $${total}`)
             services = false;
         break;
@@ -43,5 +43,5 @@ while (services){
            alert("Ingrese una opción válida");
         break;
     }
-    alert(`Nos alegra que nos hayas elegido ${user}, esperamos volver a verte pronto!`)
 }
+alert(`Nos alegra que nos hayas elegido ${user}, esperamos volver a verte pronto!`)
