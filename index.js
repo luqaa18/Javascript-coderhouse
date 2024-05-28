@@ -31,19 +31,28 @@ let servicesList = [
 
 let shoppingCart = [];
 let continueShopping = true;
-
+function cartAdd(){
+    let cartDetails = '';
+    let total = 0;
+    shoppingCart.forEach(item => {
+        cartDetails += `- ${item.name}: $${item.price}\n`;
+        total += item.price;
+    });
+    console.log(`Tu carrito:\n${cartDetails}\nTotal: $${total}`);
+}
 function displayCart() {
-    if (shoppingCart.length === 0) {
-        console.log("Tu carrito está vacío.");
-    } else {
-        let cartDetails = '';
-        let total = 0;
-        shoppingCart.forEach(item => {
-            cartDetails += `- ${item.name}: $${item.price}\n`;
-            total += item.price;
-        });
-        console.log(`Tu carrito:\n${cartDetails}\nTotal: $${total}`);
-    }
+    // if (shoppingCart.length === 0) {
+    //     console.log("Tu carrito está vacío.");
+    // } else {
+    //     let cartDetails = '';
+    //     let total = 0;
+    //     shoppingCart.forEach(item => {
+    //         cartDetails += `- ${item.name}: $${item.price}\n`;
+    //         total += item.price;
+    //     });
+    //     console.log(`Tu carrito:\n${cartDetails}\nTotal: $${total}`);
+    // }
+    shoppingCart.length === 0 ? console.log('Tu carrito esta vacio'):cartAdd();
 }
 
 function productsMenu() {
