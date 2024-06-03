@@ -1,0 +1,46 @@
+body{
+    background-image: linear-gradient(rgb(90, 33, 33), rgb(199, 157, 157)), url(../assets/img/fondo.jpg);
+    height: 100vh;
+}
+.boton{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    &:hover{
+        opacity: 0.7;
+  }
+}
+
+.img{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.containerServices{
+    background-color: rgba(156, 93, 104, 0.541);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.containerProducts{
+    background-color: rgba(156, 93, 104, 0.541);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.cart-item{
+    display: flex;
+    align-items:center;
+}
