@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre entrega 2</title>
+    <title>Tarjeta de Producto</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Pre entrega 2</h1>
+    <header class="container">
+        <h1 class="text-center titulo " contenteditable spellcheck="false">El pela's store</h1>
+        <!-- boton carrito de compras -->
+        <section>
+            <button class="btn position-fixed" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img id="imgSC"
+                    src="./assets/img/shopping-cart.png" alt="shopping-cart"><span id="cuenta-carrito">0</span>
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito de compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body carrito" id="carrito">
+                </div>
+            </div>
+        </section>
     </header>
-    <footer>
-        <script src="script.js"></script>
-    </footer>
+    <main class="container">
+        <div class="row p-4 justify-content-center align-items-center contenedorTarjetas" id="contenedorTarjetas">
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
